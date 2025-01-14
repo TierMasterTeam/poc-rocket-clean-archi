@@ -1,0 +1,12 @@
+[package]
+name = "poc-projet-annuel-b3"
+version = "0.1.0"
+authors = ["runner"]
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.83"
+derive-new = "0.7.0"
+rocket = { version = "0.5.1", features = ["json", "serde_json"] }
+serde = { version = "1.0", features = ["derive"] }
+sqlx = { version = "0.8.3", features = ["postgres", "sqlite", "macros", "runtime-tokio"] }
